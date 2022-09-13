@@ -1,3 +1,4 @@
+#! /bin/bash
 mkdir -p ${folder}
 cd ${folder}
 if [ "${prov}" = False ] ; then
