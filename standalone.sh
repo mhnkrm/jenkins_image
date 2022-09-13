@@ -12,4 +12,3 @@ sed -i s"|output_file_obj.write(stamp + ' ' + type + ':' + job_obj.name + ' # ' 
 cd ${WORKSPACE}/${folder}/test_framework
 source ./fnc-init-test-env
 
-tfwk-exec-test-agent --topology-type docker-single --test-engine Warrior --topology-tag-name NE1-main --define-attr-defaults image-path=/proj/artifacts/projects/1finity-tseries/1finity-tseries_latest/release/build.artifact/MACHINE.qemux86-64/IMAGE.fss-image-full-t900 --define-attr-defaults machine-name=qemux86-64,image-name=fss-image-full-t900,image-info-config-name=main-BDT9-T900 --add-instance NE1/main --test-engine-begin --setenv INTF_TYPE:netconf --test-engine-end -- ${job} || exit 0
