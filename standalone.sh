@@ -14,8 +14,7 @@ sed -i s"|output_file_obj.write(stamp + ' ' + type + ':' + job_obj.name + ' # ' 
 cd ${WORKSPACE}/${folder}/test_framework
 
 card=$(python -c 'import os,re;job_url=os.getenv("JOB_URL");print(re.findall(r"(P9.*?)/job/",job_url)[0])') 
-export card_type=PIT9-$card
-export product=T900/$card
+echo $card
 
 
 
