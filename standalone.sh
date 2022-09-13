@@ -13,8 +13,4 @@ sed -i s"|warriorframework==4.4.0|${WORKSPACE}/${folder}/warriorframework/warrio
 sed -i s"|output_file_obj.write(stamp + ' ' + type + ':' + job_obj.name + ' # ' + line)|output_file_obj.write(line) if 'Warrior' in job_obj.name else output_file_obj.write(job_obj.name + ' # ' + line)|" ${WORKSPACE}/${folder}/test_framework/network-topology/bin/exec-job-tree.py
 cd ${WORKSPACE}/${folder}/test_framework
 
-card=$(python -c 'import os,re;job_url=os.getenv("JOB_URL");print(re.findall(r"(P9.*?)/job/",job_url)[0])') 
-echo $card
-
-
 
